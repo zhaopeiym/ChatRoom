@@ -11,6 +11,8 @@
   <ItemGroup>
     <Content Include="wwwroot\favicon.ico" />
     <Content Include="wwwroot\images\background.png" />
+    <Content Include="wwwroot\images\github.jpg" />
+    <Content Include="wwwroot\images\留言.png" />
     <Content Include="wwwroot\js\moment.js" />
   </ItemGroup>
   <ItemGroup>

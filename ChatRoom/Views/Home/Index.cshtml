@@ -126,6 +126,10 @@
     }
     /*手机端*/
     @@media screen and (max-width: 992px) {
+        .hiLabel {
+            display: none;
+        }
+
         .divContent {
             height: 660px;
             width: 380px;
@@ -158,6 +162,25 @@
 
 
 <div class="divContent">
+
+    <div class="hiLabel" style="position:fixed;top:50px;left:100px;max-width:200px;max-height:400px;">
+        <div>
+            <a target="_blank" href="http://haojima.net">
+                <img src="~/images/留言.png" />
+            </a>
+        </div>
+
+        <div style="margin-top:10px;">
+            <a target="_blank" href="https://github.com/zhaopeiym/ChatRoom">
+                <img src="~/images/github.jpg" />
+            </a>
+        </div>
+
+        <div style="margin-top:10px;text-align:center;color:#808080;font-size:10px">
+            阿里云 + .NET Core1.1 + WebSocket + CentOS7.3 + nginx1.12.1
+        </div>
+    </div>
+
     <div id="output"></div>
 
     <div class="login" style="">
