@@ -32,7 +32,7 @@ namespace ChatRoom
             if (!httpContext.WebSockets.IsWebSocketRequest)
                 return;
 
-            //接收请求
+            //建立一个WebSocket连接请求
             var socket = await httpContext.WebSockets.AcceptWebSocketAsync();
             //判断最大连接数
             if (_sockets.Count >= 100)
@@ -112,7 +112,7 @@ namespace ChatRoom
                 var tempsocket = sockets[i];
                 if (tempsocket.State == WebSocketState.Open)
                 {
-                    //发送请求
+                    //发送消息
                     await tempsocket.SendAsync(arraySegment, WebSocketMessageType.Text, true, CancellationToken.None);
                 }
             }
