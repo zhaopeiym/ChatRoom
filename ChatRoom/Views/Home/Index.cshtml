@@ -236,8 +236,8 @@
 
     var socket = null;
     //服务器
-    //var uri = "ws://" + window.location.host + "/ws";
-    var uri = "wss://" + window.location.host + "/ws"; // https 对应修改 wss
+    var ws = location.protocol === "https" ? "wss" : "ws";// https 对应修改 wss
+    var uri = ws + "://" + window.location.host + "/ws";
 
     //输入
     function write(data, eleClass) {
