@@ -236,7 +236,7 @@
 
     var socket = null;
     //服务器
-    var ws = location.protocol === "https" ? "wss" : "ws";// https 对应修改 wss
+    var ws = location.protocol.indexOf("https") === 0 ? "wss" : "ws";// https 对应修改 wss
     var uri = ws + "://" + window.location.host + "/ws";
 
     //输入
