@@ -199,7 +199,7 @@
 <script type="text/javascript">
 
     $(function () {
-        var historicalMessg = @Html.Raw(@ViewBag.HistoricalMessg);
+        var historicalMessg = @(Html.Raw(@ViewBag.HistoricalMessg));
         for (var i = 0; i < historicalMessg.length; i++) {
             write(historicalMessg[i]);
         }

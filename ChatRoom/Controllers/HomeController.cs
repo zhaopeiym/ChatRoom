@@ -11,7 +11,7 @@ namespace ChatRoom.Controllers
     {
         public IActionResult Index()
         {
-            ViewBag.HistoricalMessg = JsonConvert.SerializeObject(SocketHandler.historicalMessg);
+            ViewBag.HistoricalMessg = JsonConvert.SerializeObject(SocketHandler.historicalMessg).Replace("</script>", "(/script)");
             return View();          
         }
      
